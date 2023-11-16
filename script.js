@@ -29,12 +29,12 @@ botao.addEventListener('click', function jogoFunc() {
         } else if (Number(input.value) < numAleatorio) { /* Aqui ele passa para o usuario que esta abaixo do random/ */
             count--; //discontando o score                                           
             score.textContent = count
-            p.textContent = "Está abaixo ⬇️  "
+            p.textContent = "Errou... o numero Está acima ⬆️  "
 
         } else if (Number(input.value) > numAleatorio) { /* Passa que o numero esta acima do numero randomico */
             count--;
             score.textContent = count
-            p.textContent = "Está acima ⬆️ "
+            p.textContent = "Errou... o numero Está abaixo⬇️ "
         }
     }
     else { /* Se as chaces forem esgotadas */
